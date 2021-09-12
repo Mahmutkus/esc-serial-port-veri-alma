@@ -11,11 +11,11 @@ void setup() {
 
   // Attach the ESC on pin 9
   Serial.begin(9600);
-  myESC.arm();                                            // esc'mize arm etme komutunu gönderiyoruz
+  myESC.arm();                                            // Esc'mize arm etme komutunu gönderiyoruz
   digitalWrite(13, HIGH);                                 // LED aktifleştiriyoruz
   delay(5000);                                            // 5 sn bekliyoruz
-  myESC.speed(0);
-  digitalWrite(13, LOW);
+  myESC.speed(0);                                         // Esc'mizin hızını sıfır yaparak arm işlemini tamamlıyoruz
+  digitalWrite(13, LOW);                                  // LED'imizi söndürüyoruz 
 }
 void loop() {
   if (Serial.available()) { // Serial Porta girdi değerinin olup olmadığını kontrol et
