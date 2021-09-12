@@ -1,0 +1,3 @@
+https://www.robotshop.com/community/blog/show/rc-speed-controller-esc-arduino-library
+
+https://github.com/RB-ENantel/RC_ESC
